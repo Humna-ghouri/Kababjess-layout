@@ -1,0 +1,446 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+html{
+  scroll-behavior: smooth;  
+}
+body{
+    font-family: "Golos Text", sans-serif;
+    overflow-x : hidden ;
+}
+/* hero section */
+
+@media screen and (min-width:200 )and (max-width:1200)  {
+    #hero{
+        text-align: center;
+    }
+
+    #hero::before{
+        background-position: center  ;
+}
+
+}
+
+
+    #hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero::before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+     background-image:url(./imgs/kabaabjess-home-back.gif); 
+background-size: cover;
+background-position: center  ;
+background-repeat: no-repeat;
+background-position: fixed;
+filter: brightness(1.0);
+}
+#hero-content {
+    position: absolute;
+
+}
+   
+
+#hero-content h1{
+    color: white;
+    padding: 3px 20px 3px 20px;
+    
+    background: (1, 49, 78);
+}
+
+/* header section*/
+/* header 1 */
+    
+
+#header1{
+    background-color: rgba(0, 0, 0, 0.514);
+    text-decoration: none;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    top: 0px;
+    position:absolute ;
+    color: white;
+    border: dotted;
+    border-top: 0ch;
+    border-left: 0cm;
+    border-right: 0cm;
+    border-color: grey;
+    
+}
+.contact:hover{
+    color: yellow;
+}
+#navimg:hover{
+    color: yellow;
+}
+#nav1{
+    display: flex;
+    background: transparent;
+    margin-top: 10px;
+   
+} /*
+#navimg{
+   margin-left: 600px; 
+   
+}*/
+h5{
+    margin-left: 300px;
+    font-size: small;
+    margin-top: 10px;
+}
+
+
+/* header2 dec */
+@media screen and (min-width:780 ){
+    #navbar{
+        display: flex;
+}
+}
+
+
+
+
+#header2{
+    position: fixed;
+    top: 60px;
+    width: 100vw;
+    height: 70px;
+    line-height: 70px;
+}
+#header2{
+    display: inline-block;
+}
+#navbar{
+    display: flex;
+  justify-content: space-around; 
+    background: transparent;
+    position: sticky;
+}
+#navbar h1 {
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+   justify-content:space-around;
+}
+#navbar ul{
+    display: flex;
+
+}
+#navbar ul li{
+list-style: none;
+ padding: 40px 5px 60px 20px ; 
+ gap: 100em; 
+}
+#navbar ul li a{
+text-decoration: none;
+color: white ;
+font-size: large;
+font-weight:70;
+border: dotted;
+border-left: 0cm;
+border-right: 0cm;
+padding: 8px;
+border-color: gray;
+}
+
+
+
+/* about sec start */
+    
+
+
+#about{
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    height: 550px;
+   justify-content: center;
+
+
+}
+    
+
+    #afterabout{
+    /* filter: brightness(5); */
+    /* filter: brightness(40%) contrast(60%); */
+content: "";
+     position:absolute; 
+    width: 100%;
+    height: 100%;
+    background-image:url(./imgs/back1.jpg) ;
+background-size: cover;
+background-position: center  ;
+background-repeat: no-repeat;
+ background-position: fixed; 
+
+
+    }
+    
+p{
+    margin-top: 30px;
+   text-align: justify;
+   margin-left: 50px;
+   font-size: larger;
+   font-weight: lighter;
+  font-style: inherit;
+  color: rgb(155, 152, 152);
+}
+#aboutimg{
+   margin-left: 70px;
+  margin-top: 40px;
+   
+}
+
+
+
+
+#speciality{
+    text-align: center;
+    position: relative;
+    color: white;
+    margin-top: 2em;
+    
+}
+.fs-1{
+    color: rgb(222, 222, 222);
+}
+.imgs{
+    margin: 50px;
+  border: 10px double;
+    border-color: aliceblue;
+    padding: 20px;
+    border-radius: 30px; 
+}
+
+
+
+
+
+@media only screen and (max-width: 1350px ){
+    #about{
+       flex-direction: row;
+      
+
+   }
+  p{
+    font-size: medium;
+   text-align: justify;
+   }
+
+   
+
+}
+
+
+
+#order-sec{
+    position: relative;
+    height: 20em;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+
+}
+#order{
+    padding-top: 2%;
+  
+    text-align: center;
+    
+}
+.num{
+    color: rgb(209, 181, 56);
+}
+/* bank discount sec */
+#bank-dis{
+    content:"" ;
+    position: relative;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 50em;
+    background-image:url(./imgs/16.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: fixed;
+
+
+    
+}
+#bank-cont{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    margin: -30px;
+}
+.bankimg{
+    margin: 0px 50px 0 50px; 
+    /* padding: 10px; */
+    justify-content: space-between;
+    
+}
+
+
+
+/* gallery section  */
+#gallerycont{
+    position: relative;
+    height: 30em;
+    color: white;
+    text-align: center;
+    background-color: rgb(58, 58, 58);
+    width: 100%;
+   
+    
+   
+}
+
+#gallery{
+    margin-top: 0%;
+   padding-top: 0%;
+ 
+}
+#gallery img {
+margin: 8px;
+
+}
+.gimg{
+    border: 5px double;
+border-color: rgba(240, 248, 255, 0.562);
+padding: 8px;
+border-radius: 10px; 
+
+}
+#section{
+    position:relative ;
+    width: 100%;
+    height: 30em;
+    background-image:url(./imgs/back3.jpg) ;
+background-position: center  ;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: fixed;
+margin-top: 0%;
+
+}
+#sectioncont{
+    text-align: center;
+} 
+#sectioncont p{
+    margin-left: 22em;
+    font-size: x-large;
+    font-weight: bold;
+}
+/* location section start */
+
+
+#locationsection {
+    height: 60%;
+    width: 100%;
+    color: rgb(58, 58, 58);
+}
+
+
+
+#locationcont{
+ height: 80%;
+width: 100%;
+position: relative;
+text-align: center;
+justify-content: space-between; 
+background-color: rgb(58, 58, 58);
+color: white;
+}
+
+
+
+/* second last section starts */
+
+ #lastsection{
+height: 25em;
+width: 100;
+content:"" ;
+position: relative;
+top: 0;
+left:0;
+width: 100%;
+background-image:url(./imgs/sac1.jpg);
+ background-size: cover; 
+background-position: center  ;
+background-repeat: no-repeat;
+background-position: fixed; 
+
+filter: brightness(80%);
+ }
+ 
+
+
+#lastcont{
+display: flex;
+justify-content: space-evenly;
+
+}    
+.content h5{
+  margin-left: 0%;
+  gap: 50px;
+  color: #ffffff!important;
+  font-size: large;
+ 
+}
+.content h2{
+    margin-top: 80px;
+color: yellow;
+
+}
+
+#end-sec{
+    height: 4em;
+    position: relative;
+    background-color: rgb(58, 58, 58);
+    width: 100%;
+}
+#end{
+   text-align: center;
+   padding-top: 1%;
+   font-size:small ;
+   color: grey;
+}
+
+
+
+/* media queiry */
+
+@media only screen and (max-width: 1030px ){
+    #about{
+    flex-direction:column;
+    height: 60em;
+    text-align: center;
+    
+}
+#about p{
+    text-align: center;
+}
+ 
+#speciality  {
+   flex-direction: column;
+ 
+    
+}
+#speciality img{
+    flex-shrink: 0;
+}
+
+
+}
